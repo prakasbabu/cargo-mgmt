@@ -33,11 +33,11 @@
         </div>
         <div class="form-group">
             <label for="pickupDate">Pickup Date</label>
-            <input type="date" class="form-control" id="pickupDate" name="pickupDate" value="${cargoDto.pickupDate}">
+            <input type="date" class="form-control" id="pickupDate" name="pickupDate" pattern="yyyy-MM-dd HH:mm:ss" value="${cargoDto.pickupDate}">
         </div>
         <div class="form-group">
             <label for="deliveryDate">Delivery Date</label>
-            <input type="date" class="form-control" id="deliveryDate" name="deliveryDate" value="${cargoDto.deliveryDate}">
+            <input type="date" class="form-control" id="deliveryDate" name="deliveryDate" pattern="yyyy-MM-dd HH:mm:ss" value="${cargoDto.deliveryDate}">
         </div>
 
         <button type="submit" class="btn btn-primary">Save Changes</button> <FORM> <INPUT TYPE="button" VALUE="Dont Save" class="btn btn-danger" onClick="history.go(-1)"> </FORM>

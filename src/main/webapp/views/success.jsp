@@ -11,9 +11,12 @@
 </head>
 <body>
 
+<div class = "container" mt-5>
+
 ${message}
 <br><br>
-<FORM> <INPUT TYPE="button" VALUE="Go Back" onClick="history.go(-1)"> </FORM>
+<FORM> <INPUT TYPE="button" VALUE="Go Back" class="btn btn-danger" onClick="history.go(-1)"> </FORM>
+</div>
 
 </body>
 </html>

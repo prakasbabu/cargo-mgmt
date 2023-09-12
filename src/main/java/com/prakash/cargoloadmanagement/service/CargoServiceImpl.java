@@ -1,6 +1,10 @@
 package com.prakash.cargoloadmanagement.service;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -39,9 +43,8 @@ public class CargoServiceImpl implements CargoService {
 		cargo.setVolume(cargoDto.getVolume());
 		cargo.setPickupDate(cargoDto.getPickupDate());
 		cargo.setDeliveryDate(cargoDto.getDeliveryDate());
-
-		Cargo updatedCargo = this.cargoRepository.save(cargo);
 		
+		Cargo updatedCargo = this.cargoRepository.save(cargo);
 		return this.entityToDto(updatedCargo);
 	}
 

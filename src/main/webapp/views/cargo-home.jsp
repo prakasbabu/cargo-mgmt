@@ -33,20 +33,24 @@
         .button:hover {
             background-color: #0056b3;
         }
+
+        /* Add CSS styles for the links */
+        a {
+            font-size: 24px; /* Change the font size as desired */
+            color: red; /* Change the text color to red */
+        }
     </style>
 </head>
+<body>
 <div class="container mt-1">
-    <h1 color = "red">Welcome to Cargo Module</h1>
+    <h1>Welcome to Cargo Module</h1>
     <br>
 
     <ul>
         <li><a href="/cargo-add">Add Cargo</a></li>
         <br><br><br><br>
         <li><a href="/cargo-view">View / Edit / Delete Cargo</a></li>
-       
     </ul>
-
-
 </div>
 </body>
 </html>

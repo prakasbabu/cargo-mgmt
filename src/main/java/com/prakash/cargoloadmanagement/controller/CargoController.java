@@ -77,18 +77,20 @@ public class CargoController {
 	@GetMapping ("/updateCargo")
 	public String updateCargo (@RequestParam ("cargoId") Integer cargoId, Model model, CargoDto cargoDto ) {
 		CargoDto updatedCargo = this.cargoService.updateCargo(cargoDto, cargoId);
-		List<CargoDto> cargoList = this.cargoService.getAllCargo();
-		model.addAttribute("cargoList", cargoList);
-		return "cargo-list";
+//		List<CargoDto> cargoList = this.cargoService.getAllCargo();
+//		model.addAttribute("cargoList", cargoList);
+//		return "cargo-list";
+		return "redirect:/cargo-view";
 	}
 	
 	@GetMapping("/cargo-delete")
 	public String deleteCargo (@RequestParam ("cargoId") Integer cargoId, CargoDto cargoDto, Model model) {
 		this.cargoService.deleteCargo(cargoId);
-		List<CargoDto> cargoList = this.cargoService.getAllCargo();
-		model.addAttribute("cargoList", cargoList);
-		model.addAttribute("message", "Cargo deleted successfully");
-		return "cargo-list";
+//		List<CargoDto> cargoList = this.cargoService.getAllCargo();
+//		model.addAttribute("cargoList", cargoList);
+//		model.addAttribute("message", "Cargo deleted successfully");
+	//	return "cargo-list";
+		return "redirect:/cargo-view";
 	}
 	
 	

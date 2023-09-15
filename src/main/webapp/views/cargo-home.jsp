@@ -50,7 +50,11 @@
         <li><a href="/cargo-add">Add Cargo</a></li>
         <br><br><br><br>
         <li><a href="/cargo-view">View / Edit / Delete Cargo</a></li>
+        <br><br>
+        <FORM> <INPUT TYPE="button" VALUE="Go Back" class="btn btn-danger" onClick="history.go(-1)"> </FORM>
     </ul>
 </div>
+
+
 </body>
 </html>
